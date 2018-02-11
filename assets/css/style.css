@@ -1,0 +1,263 @@
+    body, html {
+        height: 100%;
+        min-height: 100%;
+    }
+   
+    @font-face {
+        font-family: 'WaltographRegular';
+            src: url('/assets/fonts/waltograph/23a40698cd1bb84f930b7a0884c134a6/ab260a56f2b852b78f81eac337e0a2fc/WaltographRegular.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+          }
+
+#backGround {
+    background-image: url("../images/YSikR0E-disney-backgrounds.jpg");
+    background-size: cover;
+}
+
+#titleBar {
+    background: rgba(255, 255, 255, 0);
+    padding: 30px 0 20px 0;
+}
+
+#start {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-family: 'waltographRegular';
+    font-size: 36px;
+    color: #fff;
+
+}
+
+#tbh1 {
+    font-family: 'waltographRegular';
+    font-size: 90px;
+    color: #fff;
+    margin: 0px
+
+}
+
+
+#ltr0, #ltr1, #ltr2, #ltr3, #ltr4, #ltr5, #ltr6, #ltr7, #ltr8, #ltr9 {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-size: 4rem;
+    font-family: 'waltographRegular';
+    color:#000;
+}
+
+#scoreBoard {
+    margin-top: 0;
+    padding-left: 0;
+    color:#ffffff;
+}
+
+#scb {
+    font-size: 48px;
+    font-family: 'waltographRegular';
+    margin-top: 0;
+}
+
+p {
+    font-size: 30px;
+    font-family: 'waltographRegular';
+    padding-left: 25px;
+}
+
+#displayWord {
+    height: 50px;
+    margin-top: 4%;
+    line-height: 50px;
+}
+
+#ltrsGuessed {
+    font-size: 36px;
+    font-family: 'waltographRegular';
+    color: #000;
+
+    margin-left: 20%;
+}
+
+#charImage {
+    display: block;
+    padding-top: 3%;
+    margin: 0 auto;
+    max-height: 350px;
+    max-width: 350px;
+}
+
+#gmsPlayed, #gmsWon, #gmsLost, #gsCount {
+    padding-left: 10px;
+}
+
+#pltrG, #ltrG {
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 980px) and (min-width: 769px) {
+
+    #backGround {
+        background-image: url("../images/YSikR0E-disney-backgrounds_980.png");
+        background-size: cover;
+    }
+
+    #ltrsGuessed {
+        margin-left: 40%;
+    }
+
+    #start {
+        top: 10%;
+        left: 2%;
+        font-size: 30px;    
+    } 
+}
+
+@media screen and (min-width: 641px) and (max-width: 768px) and (min-height: 900px) {
+
+    #backGround {
+        background-image: url("../images/YSikR0E-disney-backgrounds_768.png");
+        background-size: cover;
+    }
+
+    #charImage {
+        margin-top: 30%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #row-first {
+        height: 60%;
+        padding-top: 5%;
+    }
+
+    #row-second {
+        height: 40%;
+    }
+
+    #ltrsGuessed {
+        padding-top: 10%;
+    }
+
+    #start {
+        top: 12%;
+        left: 2%;
+        font-size: 24px;    
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 768px) and (max-height: 899px) {
+
+    #backGround {
+        background-image: url("../images/YSikR0E-disney-backgrounds_768.png");
+        background-size: cover;
+    }
+
+    #charImage {
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #row-first {
+        height: 60%;
+        padding-top: 5%;
+    }
+
+    #row-second {
+        height: 40%;
+    }
+
+    #ltrsGuessed {
+        padding-top: 5%;
+        margin-left: 5%;
+    }
+
+    #pltrG, #ltrG {
+        padding-left: 0;
+    }
+
+    #start {
+        top: 35%;
+        left: 2%;
+        font-size: 24px;    
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+
+    #scb {
+        font-size: 30px;
+        font-family: 'waltographRegular';
+        margin-top: 0;
+    }
+
+    .pfont {
+        font-size: 18px;
+        font-family: 'waltographRegular';
+        padding-left: 25px;
+    }
+
+    #pltrG {
+        font-size: 30px;
+    }
+
+    #ltrG {
+        font-size: 18px;
+    }
+
+    #start {
+        font-size: 24px;    
+    }
+
+    #backGround {
+        background-image: url("../images/YSikR0E-disney-backgrounds_640.png");
+        background-size: cover;
+    }
+
+    #titleBar {
+        background: rgba(255, 255, 255, 0);
+        padding: 10px 0 0 0;
+    }
+    
+    #tbh1 {
+        font-family: 'waltographRegular';
+        font-size:48px;
+        color: #fff;
+        margin: 0px
+    }
+
+    #charImage {
+        max-height: 200px;
+        max-width: 200px;
+    } */
+    
+
+    #ltr0, #ltr1, #ltr2, #ltr3, #ltr4, #ltr5, #ltr6, #ltr7, #ltr8, #ltr9 {
+        font-size: 36px;
+    }
+
+    #ltrsGuessed {
+        padding-top: 5%;
+        margin-left: 0%;
+        font-size: 30px;
+    }
+
+    #start {
+        top: 8%;
+        left: 2%;
+        font-size: 24px;    
+    }
+
+    #row-first {
+        height: 60%;
+        padding-top: 5%;
+    }
+
+    #row-second {
+        height: 40%;
+    }
+    
+
+}
