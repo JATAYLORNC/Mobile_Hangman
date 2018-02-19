@@ -5,6 +5,7 @@
 
     body {
         cursor: pointer;
+        touch-action: auto;
     }
    
     @font-face {
