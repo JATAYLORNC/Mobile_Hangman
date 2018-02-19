@@ -2,6 +2,12 @@
 
 window.onload = function startGame() {
 
+    $('body').on("click", function() { 
+        $('#dummy').focus(); 
+        console.log("focused")
+    }); 
+    $('#dummy').focus();
+
     var wordArray = ["Pooh", "Piglet", "Eeyore", "Tigger", "Aladdin", "Genie", "Mickey", "Minnie", "Marie", "Omalley", "Berlioz", 
     "Toulouse", "Duchess", "Lilo", "Stitch", "Cinderella", "Jasmine", "Goofy", "Pluto", "Donald", "Daisy", "Bambi", "Thumper", "Flower", "Roo",
     "Kanga", "Rabbit", "Owl", "Gopher", "Baloo", "Bagheera", "Mowgli", "Kaa"];
@@ -15,11 +21,6 @@ window.onload = function startGame() {
     hangMan();
 
     function hangMan() {
-
-        $('body').on("click", function() { 
-            $('#dummy').focus(); 
-        }); 
-        $('#dummy').focus();
 
         document.getElementById("charImage").src = "assets/images/guesswho.png";
 
