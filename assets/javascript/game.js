@@ -3,7 +3,8 @@
 window.onload = function startGame() {
 
     var wordArray = ["Pooh", "Piglet", "Eeyore", "Tigger", "Aladdin", "Genie", "Mickey", "Minnie", "Marie", "Omalley", "Berlioz", 
-    "Toulouse", "Duchess", "Lilo", "Stitch", "Cinderella", "Jasmine"];
+    "Toulouse", "Duchess", "Lilo", "Stitch", "Cinderella", "Jasmine", "Goofy", "Pluto", "Donald", "Daisy", "Bambi", "Thumper", "Flower", "Roo",
+    "Kanga", "Rabbit", "Owl", "Gopher", "Baloo", "Bagheera", "Mowgli", "Kaa"];
 
     var gamesPlayed = 0;
 
@@ -12,6 +13,11 @@ window.onload = function startGame() {
     var gameOver = false;
 
     hangMan();
+
+    $(document).on("click",function(){ 
+        $('#dummy').focus(); 
+        }); 
+    $('#dummy').focus();
 
     function hangMan() {
 
