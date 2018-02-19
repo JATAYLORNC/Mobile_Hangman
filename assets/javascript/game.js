@@ -16,12 +16,12 @@ window.onload = function startGame() {
 
     function hangMan() {
 
-        document.getElementById("charImage").src = "assets/images/guesswho.png";
-
         $(document).on("click", function() { 
             $('#dummy').focus(); 
         }); 
         $('#dummy').focus();
+
+        document.getElementById("charImage").src = "assets/images/guesswho.png";
 
     //Use if statement so that game can be played multiple times until all words have been used.
         if (wordArray.length > 0) {
