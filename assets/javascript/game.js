@@ -18,7 +18,7 @@ window.onload = function startGame() {
 
         document.getElementById("charImage").src = "assets/images/guesswho.png";
 
-        $('body').on("click", function() { 
+        $(document).on("click", function() { 
             $('#dummy').focus(); 
         }); 
         $('#dummy').focus();
