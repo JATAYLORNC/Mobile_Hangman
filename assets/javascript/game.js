@@ -16,7 +16,7 @@ window.onload = function startGame() {
 
     $(document).on("click",function(){ 
         $('#dummy').focus(); 
-        }); 
+    }); 
     $('#dummy').focus();
 
     function hangMan() {
@@ -82,6 +82,10 @@ window.onload = function startGame() {
 
                 //assigns the key code to a variable
                 var userKeyCode = Number(event.keyCode);
+
+                if(event.keyCode==229){
+                    event.keyCode=$('#dummy').val().slice($('#dummy').val().length-1,$('#dummy').val().length).toLowerCase().charCodeAt(0);
+                }
 
                 //Make sure key pressed is a letter of the alphabet
                 if (userKeyCode >= 65 && userKeyCode <= 97) {
