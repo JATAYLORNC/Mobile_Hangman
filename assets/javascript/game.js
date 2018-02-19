@@ -18,7 +18,7 @@ window.onload = function startGame() {
 
         document.getElementById("charImage").src = "assets/images/guesswho.png";
 
-        $(document).on("click",function() { 
+        $('body').on("click", function() { 
             $('#dummy').focus(); 
         }); 
         $('#dummy').focus();
@@ -74,11 +74,11 @@ window.onload = function startGame() {
             var correctGuess = 0;
                 
             // This function is run whenever the user presses a key.
-            document.onkeyup = function(event) {
+            document.onkeypress = function(event) {
 
                 // Determines which key was pressed.
                 //var userGuess = String.fromCharCode(event.which).toLowerCase();
-                var userGuess = event.key;
+                var userGuess = event.key.toLowerCase();
 
                 //assigns the key code to a variable
                 var userKeyCode = Number(event.keyCode);
@@ -88,7 +88,7 @@ window.onload = function startGame() {
                 }
 
                 //Make sure key pressed is a letter of the alphabet
-                if (userKeyCode >= 65 && userKeyCode <= 97) {
+                if (userKeyCode >= 65 && userKeyCode <= 122) {
 
                     //Make sure key pressed is not one of the previous guesses
                     if (previousGuess.indexOf(userGuess) >= 0) {
