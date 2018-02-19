@@ -16,7 +16,7 @@ window.onload = function startGame() {
 
     function hangMan() {
 
-        $(document).on("click", function() { 
+        $('body').on("click", function() { 
             $('#dummy').focus(); 
         }); 
         $('#dummy').focus();
